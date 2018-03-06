@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
 using UnityEditor;
-#endif
+//#endif
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -283,7 +283,7 @@ public class WaterTile : Tile
     }
 
 
-/*#if UNITY_EDITOR
+#if UNITY_EDITOR
     [MenuItem("Assets/Create/Tiles/WaterTile")]
     public static void CreateWaterTile()
     {
@@ -295,5 +295,5 @@ public class WaterTile : Tile
         AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<WaterTile>(), path);
     }
 
-#endif*/
+#endif
 }
